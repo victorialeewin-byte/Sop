@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOP: Characterization of Berberine Nanomicelles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.25;
+            color: #000000;
+            margin: 40px;
+        }
+        h1 {
+            color: #1a365d;
+            font-size: 24px;
+            border-bottom: 2px solid #1a365d;
+            padding-bottom: 8px;
+        }
+        h2 {
+            color: #2b6cb0;
+            font-size: 18px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+        h3 {
+            color: #2d3748;
+            font-size: 14px;
+            margin-top: 16px;
+            margin-bottom: 6px;
+        }
+        p, li {
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+        ul, ol {
+            margin-top: 4px;
+            margin-bottom: 12px;
+            padding-left: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            margin-bottom: 24px;
+        }
+        th, td {
+            border: 1px solid #cbd5e0;
+            padding: 10px;
+            text-align: left;
+            font-size: 13px;
+        }
+        th {
+            background-color: #ebf8ff;
+            color: #2b6cb0;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f7fafc;
+        }
+        .note {
+            background-color: #fffaf0;
+            border-left: 4px solid #dd6b20;
+            padding: 12px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Standard Operating Procedure (SOP): Characterization of Berberine (BBR) Nanomicelles in Intestinal Fluid (IF)</h1>
+    
+    <p><strong>Document ID:</strong> SOP-LAB-042</p>
+    <p><strong>Effective Date:</strong> June 8, 2026</p>
+
+    <h2>1. Objective</h2>
+    <p>To establish an optimized instrument protocol using a 190 nm latex standard and to evaluate the particle size distribution and formation of Berberine (BBR) nanomicelles (target range: 10 nm &ndash; 220 nm) within simulated Intestinal Fluid (IF).</p>
+
+    <h2>2. Materials and Reagents</h2>
+    <ul>
+        <li><strong>Analyte:</strong> Berberine (BBR) stock solution.</li>
+        <li><strong>Matrix:</strong> Simulated Intestinal Fluid (IF), pre-filtered through a 0.22 &micro;m membrane.</li>
+        <li><strong>Standard:</strong> Latex beads (Mean Diameter = 190 nm, original concentration = 1.0 x 10<sup>13</sup> particles/mL).</li>
+        <li><strong>Diluent:</strong> Ultrapure Water (H<sub>2</sub>O), pre-filtered (0.02 &micro;m or 0.1 &micro;m) to remove background particulates.</li>
+    </ul>
+
+    <h2>3. Standard Serial Dilution Protocol</h2>
+    <p>To achieve optimal instrument tracking and avoid camera saturation, the original latex stock must be diluted to an optimal working concentration of approximately 1.0 x 10<sup>8</sup> particles/mL (a 100,000-fold dilution).</p>
+    
+    <ol>
+        <li><strong>Step 1 (1:100):</strong> Transfer 10 &micro;L of the Latex Stock into 990 &micro;L of H<sub>2</sub>O. Vortex thoroughly.<br><em>Yields: 1.0 x 10<sup>11</sup> particles/mL.</em></li>
+        <li><strong>Step 2 (1:100):</strong> Transfer 10 &micro;L of the Step 1 solution into 990 &micro;L of H<sub>2</sub>O. Vortex thoroughly.<br><em>Yields: 1.0 x 10<sup>9</sup> particles/mL.</em></li>
+        <li><strong>Step 3 (1:10):</strong> Transfer 100 &micro;L of the Step 2 solution into 900 &micro;L of H<sub>2</sub>O. Vortex thoroughly.<br><em>Yields: 1.0 x 10<sup>8</sup> particles/mL (Final Working Standard).</em></li>
+    </ol>
+
+    <h2>4. Instrument Optimization (Parameter Setting)</h2>
+    <ol>
+        <li><strong>Flush System:</strong> Prime the instrument chamber with H<sub>2</sub>O to ensure a clean baseline.</li>
+        <li><strong>Standard Calibration (H<sub>2</sub>O + Latex):</strong>
+            <ul>
+                <li>Inject the Step 3 Latex Working Standard (1.0 x 10<sup>8</sup> particles/mL) into the sample chamber.</li>
+                <li>Adjust the focus until the 190 nm particles appear as sharp, distinct point-scatterers.</li>
+                <li>Optimize the Camera Level (Exposure Time) and Gain. Ensure the settings are high enough to track the 190 nm particles continuously, but low enough to prevent pixel blooming (oversaturation).</li>
+            </ul>
+        </li>
+    </ol>
+    <div class="note">
+        <strong>CRITICAL NOTE:</strong> Lock these specific instrument settings (Exposure/Gain) for all subsequent matrix cross-checks and experimental samples to maintain operational consistency.
+    </div>
+
+    <h2>5. Matrix Validation and Experimental Groups</h2>
+    <p>Evaluate the samples in the following sequential order to validate the matrix and accurately measure the experimental drug formulation:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Group &amp; Name</th>
+                <th>Procedure</th>
+                <th>Purpose &amp; Expected Outcome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Group 1:</strong><br>Blank Matrix</td>
+                <td>Inject the filtered intestinal fluid (IF) alone.</td>
+                <td>Establishes background noise and the baseline particle profile of the complex biological fluid. Expect a low-intensity, broad peak (or no peak if highly pure).</td>
+            </tr>
+            <tr>
+                <td><strong>Group 2:</strong><br>Positive Control</td>
+                <td>Spike the IF with the Step 2 latex solution to achieve a final concentration of ~1.0 x 10<sup>8</sup> particles/mL in the IF matrix. Inject and measure.</td>
+                <td>Cross-checks and confirms that the predefined camera and gain settings can accurately resolve the distinct 190 nm peak despite the refractive index and complex matrix of the intestinal fluid.</td>
+            </tr>
+            <tr>
+                <td><strong>Group 3:</strong><br>Experimental Sample</td>
+                <td>Prepare the BBR formulation in IF according to the defined concentration gradient. Incubate if necessary to allow micelle self-assembly. Inject into the chamber.</td>
+                <td>Allows direct observation and characterization of the spontaneous formation of BBR nanomicelles.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>6. Data Acquisition and Analysis</h2>
+    <ol>
+        <li>Capture a minimum of <strong>5 video recordings</strong> (e.g., 30&ndash;60 seconds each) per sample to ensure robust statistical reliability.</li>
+        <li>Process the captures using the tracking software to generate the size distribution histogram (Concentration vs. Size).</li>
+        <li><strong>Interpretation Criteria:</strong>
+            <ul>
+                <li><em>Free BBR:</em> Expected to fall below the 10 nm detection threshold (defined as &lt; 10 nm = free).</li>
+                <li><em>Nano BBR / IF Micelles:</em> Expected to resolve as distinct peaks within the 10 nm &ndash; 220 nm range.</li>
+            </ul>
+        </li>
+        <li>Export the mean size, mode size, D10, D50, D90, and total particle concentration metrics for comprehensive reporting.</li>
+    </ol>
+
+</body>
+</html>
